@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dates">
+        <div class="block">
+          <p class="title">Date</p>
+          <input
+            type="text"
+            name="date"
+            id="date"
+            placeholder="dd"
+            required="required"
+            minlength="1"
+            maxlength="2"
+            class="input"
+          />
+        </div>
+        <div class="block">
+          <p class="title">Month</p>
+          <input
+            type="text"
+            name="month"
+            id="month"
+            placeholder="mm"
+            required="required"
+            minlength="1"
+            maxlength="2"
+            class="input"
+          />
+        </div>
+        <div class="block">
+          <p class="title">Year</p>
+          <input
+            type="text"
+            name="year"
+            id="year"
+            placeholder="yyyy"
+            required="required"
+            minlength="4"
+            maxlength="4"
+            class="input"
+          />
+        </div>
+      </div>
+      <div class="base">
+        <input type="button" name="submit" value="Submit" onclick="age()" class="button" />
+      </div>
+
+      <div id="age">
+        <p id="days">-- Days Old</p>
+        <p id="months">-- Month Old</p>
+        <p id="years">-- Years Old</p>
+      </div>
+      </div>
+    </div>
+
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+    <script src="app.js"></script>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>. -->
+    </div>
+  </body>
+</html>
